@@ -1,4 +1,22 @@
-`
+//Create employee card daa:
+const PageTemplate = function () {
+  //populate and Generate Emplyee Cards and place it in the HTML page:
+  `
+<div class="card bg-dark text-center text-white" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">${this.name}}</h5>
+        <p class="card-text">${this.role}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">${this.email}}</li>
+        <li class="list-group-item">${this.github}}</li>
+    </ul>
+
+</div>`;
+
+  //Create the HTML page and populate it with the employee card data above:
+  `;
+
 <!doctype html>
 <html lang="en">
 
@@ -26,7 +44,7 @@
 
     <main class="container-fluid bg-light">
         <!--Insert Team information here, use indivdual cards for data population-->
-
+${this.teamCards}
 
     </main>
 
@@ -46,4 +64,7 @@
 <footer>Created by Jeffrey Anderson-Lester</footer>
 
 </html>
-`
+`;
+};
+
+module.exports = PageTemplate;
