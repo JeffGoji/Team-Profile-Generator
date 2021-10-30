@@ -8,6 +8,7 @@ GitHub Repository: https://github.com/JeffGoji/Team-Profile-Generator
 - [Description](#description)
 - [Installation](#install)
 - [Pictures](#pictures)
+- [Video](#video)
 
 ## Description<a name="description"></a>
 
@@ -19,10 +20,10 @@ The layout in the HTML is handled using <a href="https://getbootstrap.com/">Boot
 
 You can download it from this Github repository:
 GitHub Repository:https://github.com/JeffGoji/Team-Profile-Generator
-You must install nodeJS from here: <A href="https://nodejs.org/en/">https://nodejs.org/en/</a>
-You must run "npm install" in the command line.
-You must install the <a href="https://www.npmjs.com/package/inquirer">inquirer npm package</a> from the command line by typing in "npm install inquirer".
-If you want to perform testing, you will need to install the <a href="https://jestjs.io/">Jest JavaScript testing npm</a>.
+You must install nodeJS from here: <A href="https://nodejs.org/en/">https://nodejs.org/en/</a>  
+You must run "npm install" in the command line.  
+You must install the <a href="https://www.npmjs.com/package/inquirer">inquirer npm package</a> from the command line by typing in "npm install inquirer".  
+If you want to perform testing, you will need to install the <a href="https://jestjs.io/">Jest JavaScript testing npm</a>.  
 
 To run the file and generate your team page type in "node index.js" in the command line and the program will run.
 Answer the prompts and the page will generated to the "output" folder.
@@ -34,9 +35,10 @@ If you do not have an output folder installed in the program directory it will n
 ## Pictures<a name="pictures"></a>
 
 Application after text has been entered and web page has been generated:
-(https://github.com/JeffGoji/Team-Profile-Generator/blob/main/screenshot.png)
+  ![Image](https://github.com/JeffGoji/Team-Profile-Generator/blob/main/screenshot.png)
 
-##Video of app in use <A name="video"></a>
+## Video<A name="video"></a>
+   Video of the app in use 
 https://www.youtube.com/watch?v=0BthibBNIxY
 
 [Back to top](#top)
