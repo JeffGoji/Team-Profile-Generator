@@ -26,7 +26,9 @@ If you want to perform testing, you will need to install the <a href="https://je
 
 To run the file and generate your team page type in "node index.js" in the command line and the program will run.
 Answer the prompts and the page will generated to the "output" folder.
-##IMPORTANT:
+  
+## IMPORTANT:
+  
 If you do not have an output folder installed in the program directory it will not work.
 
 ## Pictures<a name="pictures"></a>
