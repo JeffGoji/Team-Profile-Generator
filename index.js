@@ -56,7 +56,7 @@ function addTeamMember() {
         roleInfo = "school name";
       } else if (role === "Engineer") {
         roleInfo = "GitHub Username";
-      } else if (role === "Manager") {
+      } else {
         roleInfo = "Office Phone Number";
       }
       //Second Inquirer prompt with new prompts based on the role selected:
@@ -76,11 +76,11 @@ function addTeamMember() {
         .then(function ({ roleInfo, addMoreTeam }) {
           let newTeamMate;
           if (role === "Intern") {
-            newTeamMate = new Intern(name, teamId, roleInfo, email);
+            newTeamMate = new Intern(name, teamId, email, roleInfo);
           } else if (role === "Engineer") {
-            newTeamMate = new Engineer(name, teamId, roleInfo, email);
-          } else if (role === "Manager") {
-            newTeamMate = new Manager(name, teamId, roleInfo, email);
+            newTeamMate = new Engineer(name, teamId, email, roleInfo);
+          } else {
+            newTeamMate = new Manager(name, teamId, email, roleInfo);
           }
           employeeArray.push(newTeamMate);
           addCard(newTeamMate).then(function () {
@@ -124,7 +124,7 @@ function htmlGenerate() {
 <body>
 
     <section class="container-fluid">
-    <main class="row bg-light">
+    <main class="row bg-secondary">
         <!--Insert Team information here, use indivdual cards for data population-->`;
   fs.writeFile("./output/teamMembers.html", htmlTemplate, function (err) {
     if (err) {
@@ -146,9 +146,9 @@ function addCard(teamMate) {
     //Adding the Intern card:
     if (role === "Intern") {
       const school = teamMate.getSchool();
-      data = `<div class="card bg-dark text-center text-white m-3" style="width: 18rem;">
+      data = `<div class="card bg-danger text-center text-white m-3" style="width: 18rem;">
       <div class="card-body">
-          <h5 class="card-title">${name}</h5>
+          <h5 class="card-title fs-4">${name}</h5>
           <p class="card-text">Position: ${role}</p>
       </div>
       <ul class="list-group list-group-flush">
@@ -163,9 +163,9 @@ function addCard(teamMate) {
     //Adding the Engineer Card:
     else if (role === "Engineer") {
       const github = teamMate.getGithub();
-      data = `<div class="card bg-dark text-center text-white m-3" style="width: 18rem;">
+      data = `<div class="card bg-primary text-center text-white m-3" style="width: 18rem;">
       <div class="card-body">
-          <h5 class="card-title">${name}</h5>
+          <h5 class="card-title fs-4">${name}</h5>
           <p class="card-text">Position: ${role}</p>
       </div>
       <ul class="list-group list-group-flush">
@@ -179,9 +179,9 @@ function addCard(teamMate) {
       //Adding the Manager card:
     } else {
       const phoneNumber = teamMate.getPhoneNumber();
-      data = `<div class="card bg-dark text-center text-white m-3" style="width: 16rem;">
+      data = `<div class="card bg-warning text-center text-white m-3" style="width: 18rem;">
       <div class="card-body">
-          <h5 class="card-title">${name}</h5>
+          <h5 class="card-title fs-4">${name}</h5>
           <p class="card-text">Position: ${role}</p>
       </div>
       <ul class="list-group list-group-flush">
