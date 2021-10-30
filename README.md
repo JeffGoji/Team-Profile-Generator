@@ -1,8 +1,6 @@
 # Team Profile Generator<a name="top">
 
-GitHub Repository: https://github.com/JeffGoji/API-Weather-App
-
-Deployable link: <a href="https://jeffgoji.github.io/API-Weather-App" target:_blank>https://jeffgoji.github.io/API-Weather-App/</a>
+GitHub Repository: https://github.com/JeffGoji/Team-Profile-Generator
 
 ## Table of contents <a name="table"></a>
 
