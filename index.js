@@ -153,7 +153,7 @@ function addCard(teamMate) {
       </div>
       <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: ${teamId}</li>
-          <li class="list-group-item">Email: ${email}</li>
+          <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
           <li class="list-group-item">School: ${school}</li>
       </ul>
   
@@ -170,8 +170,8 @@ function addCard(teamMate) {
       </div>
       <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: ${teamId}</li>
-          <li class="list-group-item">Email: ${email}</li>
-          <li class="list-group-item">GitHub: ${github}</li>
+          <li class="list-group-item">Email:  <a href="mailto:${email}">${email}</a></li>
+          <li class="list-group-item">GitHub: <$ href="https://github.com/${github}">${github}</a></li>
       </ul>
   
   </div>`;
@@ -186,8 +186,8 @@ function addCard(teamMate) {
       </div>
       <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: ${teamId}</li>
-          <li class="list-group-item">Email: ${email}</li>
-          <li class="list-group-item">Phone: ${phoneNumber}</li>
+          <li class="list-group-item">Email:  <a href="mailto:${email}">${email}</a></li>
+          <li class="list-group-item">Phone: <a href="tel:${phoneNumber}">${phoneNumber}</a></li>
       </ul>
   
   </div>`;
@@ -231,7 +231,7 @@ function continueHtml() {
       console.log(err);
     }
   });
-  console.log("Building your Team page!");
+  console.log("Building your Team page! Check your 'output' folder!");
 }
 
 //Sarting the program:
